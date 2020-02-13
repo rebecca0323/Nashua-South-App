@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactPage"
+    android:background="#B59DDC">
+
+    <ImageView
+        android:id="@+id/southlogo"
+        android:layout_width="197dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="107dp"
+        android:contentDescription="@String/&quot;South's Logo&quot;"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/southlogo" />
+
+    <TextView
+        android:id="@+id/moto"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="63dp"
+        android:fontFamily="@font/bad_script"
+        android:padding="10dp"
+        android:text="Where the Panthers Roar and Students Soar"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#9E2E90"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/southlogo" />
+
+    <TextView
+        android:id="@+id/addressInfo"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="serif"
+        android:text="36 Riverside Street #1312, Nashua, NH, 03062"
+        android:textColor="#9E2E90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moto" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="58dp"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="Address:"
+        android:textColor="#9E2E90"
+        app:layout_constraintEnd_toStartOf="@+id/addressInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moto" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="85dp"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="Phone:"
+        android:textColor="#9E2E90"
+        app:layout_constraintEnd_toStartOf="@+id/phoneInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/phoneInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="serif"
+        android:text="(603)966-1100"
+        android:textColor="#9E2E90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressInfo" />
+
+    <Button
+        android:id="@+id/callSchool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="162dp"
+        android:background="@drawable/lunch_cal"
+        android:backgroundTint="#412B7A"
+        android:padding="10dp"
+        android:text="Call"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneInfo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/lunch_cal"
+        android:backgroundTint="#CF1F7F"
+        android:onClick="goTwitter"
+        android:text="Twitter"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/southlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/lunch_cal"
+        android:backgroundTint="#412B7A"
+        android:onClick="Bell"
+        android:padding="10dp"
+        android:text="Bell Schedule"
+        android:textColor="#FFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/callSchool" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
